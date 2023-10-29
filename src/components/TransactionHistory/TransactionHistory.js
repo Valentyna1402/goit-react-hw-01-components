@@ -1,7 +1,5 @@
 export default function TransactionHistory({ items }) {
   return (
-    <section className="transactions">
-      <h2 className="title">Transactions History</h2>
       <table className="transaction-history">
         <thead>
           <tr>
@@ -23,6 +21,5 @@ export default function TransactionHistory({ items }) {
           })}
         </tbody>
       </table>
-    </section>
   );
 }

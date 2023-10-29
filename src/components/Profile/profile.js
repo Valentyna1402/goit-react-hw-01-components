@@ -1,27 +1,39 @@
+import {
+  ProfileContainer,
+  Description,
+  ProfileImg,
+  ProfileName,
+  ProfileText,
+  StatsList,
+  StatsItem,
+  StatsText,
+  StatsTextAccent,
+} from './Profile.styled';
+
 export default function Profile({ avatar, userName, tag, location, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{userName}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileContainer>
+      <Description>
+        <ProfileImg src={avatar} alt="User avatar" width="240px" />
+        <ProfileName className="name">{userName}</ProfileName>
+        <ProfileText className="tag">@{tag}</ProfileText>
+        <ProfileText className="location">{location}</ProfileText>
+      </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers: </span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views: </span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes: </span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsList>
+        <StatsItem>
+          <StatsTextAccent className="label">Followers: </StatsTextAccent>
+          <StatsText className="quantity">{stats.followers}</StatsText>
+        </StatsItem>
+        <StatsItem>
+          <StatsTextAccent className="label">Views: </StatsTextAccent>
+          <StatsText className="quantity">{stats.views}</StatsText>
+        </StatsItem>
+        <StatsItem>
+          <StatsTextAccent className="label">Likes: </StatsTextAccent>
+          <StatsText className="quantity">{stats.likes}</StatsText>
+        </StatsItem>
+      </StatsList>
+    </ProfileContainer>
   );
 }

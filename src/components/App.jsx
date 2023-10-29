@@ -27,10 +27,13 @@ export const App = () => {
         location={user.location}
         stats={user.stats}
       />
-      ;
-      <Statistics title="Upload stats" stats={data} />;
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+
+      <Statistics title="Upload stats" stats={data} />
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
+      
     </div>
   );
 };
