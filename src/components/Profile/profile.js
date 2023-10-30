@@ -1,10 +1,10 @@
 import {
-  ProfileContainer,
+  Container,
   Description,
-  ProfileImg,
-  ProfileName,
-  ProfileText,
-  StatsList,
+  Img,
+  Name,
+  Text,
+  List,
   StatsItem,
   StatsText,
   StatsTextAccent,
@@ -12,15 +12,15 @@ import {
 
 export default function Profile({ avatar, userName, tag, location, stats }) {
   return (
-    <ProfileContainer>
+    <Container>
       <Description>
-        <ProfileImg src={avatar} alt="User avatar" width="240px" />
-        <ProfileName>{userName}</ProfileName>
-        <ProfileText>@{tag}</ProfileText>
-        <ProfileText>{location}</ProfileText>
+        <Img src={avatar} alt="User avatar" width="240px" />
+        <Name>{userName}</Name>
+        <Text>@{tag}</Text>
+        <Text>{location}</Text>
       </Description>
 
-      <StatsList>
+      <List>
         <StatsItem>
           <StatsTextAccent>Followers: </StatsTextAccent>
           <StatsText>{stats.followers}</StatsText>
@@ -33,7 +33,7 @@ export default function Profile({ avatar, userName, tag, location, stats }) {
           <StatsTextAccent>Likes: </StatsTextAccent>
           <StatsText>{stats.likes}</StatsText>
         </StatsItem>
-      </StatsList>
-    </ProfileContainer>
+      </List>
+    </Container>
   );
 }

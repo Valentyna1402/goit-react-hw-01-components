@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TransactionsTable = styled.table`
+const Table = styled.table`
   width: 100%;
   max-width: 516px;
   margin: 0 auto;
@@ -25,4 +25,4 @@ const DataCell = styled.td`
   color: rgb(102, 102, 102);
 `;
 
-export { TransactionsTable, TableHead, HeaderCell, DataCell };
+export { Table, TableHead, HeaderCell, DataCell };

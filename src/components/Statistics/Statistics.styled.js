@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StatisticsContainer = styled.section`
+const Container = styled.section`
   max-width: 516px;
   margin: 0 auto;
   border: 1px solid #cacaca;
@@ -8,17 +8,17 @@ const StatisticsContainer = styled.section`
   margin-bottom: 40px;
 `;
 
-const StatisticsTitle = styled.h2`
+const Title = styled.h2`
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
 `;
 
-const StatisticsList = styled.ul`
+const List = styled.ul`
   display: flex;
 `;
 
-const StatisticsListItem = styled.li`
+const ListItem = styled.li`
   width: 100px;
   display: flex;
   flex-direction: column;
@@ -27,20 +27,20 @@ const StatisticsListItem = styled.li`
   padding: 12px;
 `;
 
-const StatisticsItemLabel = styled.span`
+const ItemLabel = styled.span`
   color: #fff;
 `;
 
-const StatisticsItemText = styled.span`
+const ItemText = styled.span`
   color: #fff;
   font-size: 22px;
 `;
 
 export {
-  StatisticsContainer,
-  StatisticsTitle,
-  StatisticsList,
-  StatisticsListItem,
-  StatisticsItemLabel,
-  StatisticsItemText,
+  Container,
+  Title,
+  List,
+  ListItem,
+  ItemLabel,
+  ItemText,
 };

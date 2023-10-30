@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ProfileContainer = styled.div`
+const Container = styled.div`
   max-width: 260px;
   padding: 8px;
   margin: 0 auto;
@@ -13,12 +13,12 @@ const Description = styled.div`
   padding: 0px;
 `;
 
-const ProfileImg = styled.img`
+const Img = styled.img`
   margin: 0 auto;
   border-radius: 50%;
 `;
 
-const ProfileName = styled.p`
+const Name = styled.p`
   display: flex;
   justify-content: center;
   margin-top: 8px;
@@ -26,14 +26,14 @@ const ProfileName = styled.p`
   font-weight: 600;
 `;
 
-const ProfileText = styled.p`
+const Text = styled.p`
   display: flex;
   justify-content: center;
   margin-top: 8px;
   color: rgb(102, 102, 102);
 `;
 
-const StatsList = styled.ul`
+const List = styled.ul`
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -60,12 +60,12 @@ const StatsTextAccent = styled.span`
 `;
 
 export {
-  ProfileContainer,
+  Container,
   Description,
-  ProfileImg,
-  ProfileName,
-  ProfileText,
-  StatsList,
+  Img,
+  Name,
+  Text,
+  List,
   StatsItem,
   StatsText,
   StatsTextAccent,

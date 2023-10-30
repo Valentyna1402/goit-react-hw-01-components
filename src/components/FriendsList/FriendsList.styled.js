@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const FriendsList = styled.ul`
+const List = styled.ul`
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 40px;
 `;
 
-const FriendsListItem = styled.li`
+const Item = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -17,25 +17,25 @@ const FriendsListItem = styled.li`
   box-shadow: 8px 8px 8px 0px rgba(102, 102, 102, 0.57);
 `;
 
-const FriendsItemStatus = styled.span`
+const Status = styled.span`
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: ${props => (props.$status ? 'green' : 'red')};
 `;
 
-const FriendsItemAvatar = styled.img`
+const Avatar = styled.img`
   max-width: 100%;
 `;
 
-const FriendsItemName = styled.p`
+const Name = styled.p`
   font-weight: 500;
 `;
 
 export {
-  FriendsList,
-  FriendsListItem,
-  FriendsItemStatus,
-  FriendsItemAvatar,
-  FriendsItemName,
+  List,
+  Item,
+  Status,
+  Avatar,
+  Name,
 };

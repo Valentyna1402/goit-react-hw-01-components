@@ -1,5 +1,5 @@
 import {
-  TransactionsTable,
+  Table,
   TableHead,
   HeaderCell,
   DataCell,
@@ -7,7 +7,7 @@ import {
 
 export default function TransactionHistory({ items }) {
   return (
-    <TransactionsTable>
+    <Table>
       <TableHead>
         <tr>
           <HeaderCell>Type</HeaderCell>
@@ -27,6 +27,6 @@ export default function TransactionHistory({ items }) {
           );
         })}
       </tbody>
-    </TransactionsTable>
+    </Table>
   );
 }

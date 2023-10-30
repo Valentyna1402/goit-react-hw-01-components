@@ -1,31 +1,31 @@
 import {
-  StatisticsContainer,
-  StatisticsTitle,
-  StatisticsList,
-  StatisticsListItem,
-  StatisticsItemLabel,
-  StatisticsItemText,
+  Container,
+  Title,
+  List,
+  ListItem,
+  ItemLabel,
+  ItemText,
 } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (
-    <StatisticsContainer>
-      <StatisticsTitle>{title}</StatisticsTitle>
+    <Container>
+     {title && <Title>{title}</Title>}
 
-      <StatisticsList>
+      <List>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <StatisticsListItem
+            <ListItem
               key={id}
               style={{ backgroundColor: getRandomHexColor() }}
             >
-              <StatisticsItemLabel>{label} </StatisticsItemLabel>
-              <StatisticsItemText>{percentage} %</StatisticsItemText>
-            </StatisticsListItem>
+              <ItemLabel>{label} </ItemLabel>
+              <ItemText>{percentage} %</ItemText>
+            </ListItem>
           );
         })}
-      </StatisticsList>
-    </StatisticsContainer>
+      </List>
+    </Container>
   );
 }
 
