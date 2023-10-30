@@ -1,9 +1,16 @@
+import {
+  FriendsListItem,
+  FriendsItemStatus,
+  FriendsItemAvatar,
+  FriendsItemName,
+} from './FriendsList.styled';
+
 export default function FriendListItem({ avatar, name, status }) {
-    return (
-      <li className="item">
-        <span className="status">{status}</span>
-        <img className="avatar" src={avatar} alt="User avatar" width="48" />
-        <p className="name">{name}</p>
-      </li>
-    );
-  }
+  return (
+    <FriendsListItem>
+      <FriendsItemStatus $status={status} />
+      <FriendsItemAvatar src={avatar} alt="User avatar" width="48" />
+      <FriendsItemName>{name}</FriendsItemName>
+    </FriendsListItem>
+  );
+}

@@ -15,23 +15,23 @@ export default function Profile({ avatar, userName, tag, location, stats }) {
     <ProfileContainer>
       <Description>
         <ProfileImg src={avatar} alt="User avatar" width="240px" />
-        <ProfileName className="name">{userName}</ProfileName>
-        <ProfileText className="tag">@{tag}</ProfileText>
-        <ProfileText className="location">{location}</ProfileText>
+        <ProfileName>{userName}</ProfileName>
+        <ProfileText>@{tag}</ProfileText>
+        <ProfileText>{location}</ProfileText>
       </Description>
 
       <StatsList>
         <StatsItem>
-          <StatsTextAccent className="label">Followers: </StatsTextAccent>
-          <StatsText className="quantity">{stats.followers}</StatsText>
+          <StatsTextAccent>Followers: </StatsTextAccent>
+          <StatsText>{stats.followers}</StatsText>
         </StatsItem>
         <StatsItem>
-          <StatsTextAccent className="label">Views: </StatsTextAccent>
-          <StatsText className="quantity">{stats.views}</StatsText>
+          <StatsTextAccent>Views: </StatsTextAccent>
+          <StatsText>{stats.views}</StatsText>
         </StatsItem>
         <StatsItem>
-          <StatsTextAccent className="label">Likes: </StatsTextAccent>
-          <StatsText className="quantity">{stats.likes}</StatsText>
+          <StatsTextAccent>Likes: </StatsTextAccent>
+          <StatsText>{stats.likes}</StatsText>
         </StatsItem>
       </StatsList>
     </ProfileContainer>

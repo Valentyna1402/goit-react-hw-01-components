@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -35,7 +35,5 @@ ol {
 
 body {
   padding: 30px;
-/* color: rgb(102, 102, 102); */
-/* background-color: #cacaca; */
-
 }
+
